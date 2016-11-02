@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/color_fff"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/pduName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="旋转木马"
+            android:textColor="@color/color_32"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/old_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="原价：￥50"
+            android:textColor="@color/color_64"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/new_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="现价：￥50    数量：2"
+            android:textColor="@color/color_64"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

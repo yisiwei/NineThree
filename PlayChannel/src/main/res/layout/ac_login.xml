@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/round_border_ccc"
+            android:drawableLeft="@drawable/icon_et_username"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="@string/username_hint"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_border_ccc"
+            android:drawableLeft="@drawable/icon_et_password"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_bg_main"
+            android:padding="10dp"
+            android:text="@string/login"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:text="使用第三方登录"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/color_b3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/login_wx"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_wechat_bg"/>
+
+    </LinearLayout>
+
+</LinearLayout>

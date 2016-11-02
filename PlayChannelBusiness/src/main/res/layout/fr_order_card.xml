@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+        <Button
+            android:id="@+id/day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_fff"
+            android:padding="10dp"
+            android:text="今日"
+            android:textColor="@color/color_main"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+        <Button
+            android:id="@+id/week"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_fff"
+            android:padding="10dp"
+            android:text="本周"
+            android:textColor="@color/color_64"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+        <Button
+            android:id="@+id/month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_fff"
+            android:padding="10dp"
+            android:text="本月"
+            android:textColor="@color/color_64"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+        <Button
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_fff"
+            android:padding="10dp"
+            android:text="本年"
+            android:textColor="@color/color_64"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+        <Button
+            android:id="@+id/beginDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_fff"
+            android:padding="10dp"
+            android:text="开始时间"
+            android:textColor="@color/color_64"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line" />
+
+        <Button
+            android:id="@+id/endDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/color_fff"
+            android:padding="10dp"
+            android:text="结束时间"
+            android:textColor="@color/color_64"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_main"
+            android:padding="10dp"
+            android:text="查询"
+            android:textColor="@color/color_fff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/color_main"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单总计：0"
+            android:textColor="@color/color_fff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="right"
+            android:text="累计销售：￥0.00"
+            android:textColor="@color/color_fff"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+</LinearLayout>

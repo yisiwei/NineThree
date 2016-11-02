@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">游乐商家</string>
+
+    <!-- 登录注册 -->
+    <string name="username_hint">手机号</string>
+    <string name="password_hint">密码</string>
+    <string name="login">登录</string>
+
+    <string name="search_my_customer_hint">请输入手机号或昵称</string>
+
+    <string name="customer_detail_phone">手&#160;&#160;机&#160;&#160;号：</string>
+
+    <string name="valid_date">有&#160;&#160;效&#160;&#160;期</string>
+
+</resources>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_main"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/title_left_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="openSetting"
+            android:src="@drawable/icon_setting" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/color_fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/title_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="余额"
+            android:textColor="@color/color_fff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/home_frame"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/color_fff">
+
+                <com.ninethree.palychannelbusiness.view.AutoScrollViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp" />
+
+                <LinearLayout
+                    android:id="@+id/home_navig_dots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/my_play"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_7"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="我的游乐场"
+                    android:textColor="@color/color_64" />
+
+                <Button
+                    android:id="@+id/play_channel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="游乐频道"
+                    android:textColor="@color/color_64" />
+
+                <Button
+                    android:id="@+id/play_equipment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_2"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="游乐设备"
+                    android:textColor="@color/color_64" />
+
+                <Button
+                    android:id="@+id/promotion"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_3"
+                    android:onClick="openPromotion"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="优惠促销"
+                    android:textColor="@color/color_64" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/color_main" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="猜你喜欢"
+                    android:textColor="@color/color_32"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/equipment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_fff"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_10"
+                    android:padding="10dp"
+                    android:text="设备大全"
+                    android:textColor="@color/color_64" />
+
+                <Button
+                    android:id="@+id/invitation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_fff"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_9"
+                    android:padding="10dp"
+                    android:text="设备招标"
+                    android:textColor="@color/color_64" />
+
+                <Button
+                    android:id="@+id/used_equipment"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_fff"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_11"
+                    android:padding="10dp"
+                    android:text="二手设备"
+                    android:textColor="@color/color_64" />
+
+                <Button
+                    android:id="@+id/place"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_fff"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_12"
+                    android:padding="10dp"
+                    android:text="场地寻租"
+                    android:textColor="@color/color_64" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"
+                android:gravity="center_vertical">
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/color_main" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="我的"
+                    android:textColor="@color/color_32"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/my_client"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_fff"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_4"
+                    android:onClick="openMyCustom"
+                    android:padding="10dp"
+                    android:text="我的客户"
+                    android:textColor="@color/color_64" />
+
+                <Button
+                    android:id="@+id/order"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_fff"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_5"
+                    android:onClick="openOrder"
+                    android:padding="10dp"
+                    android:text="销售订单"
+                    android:textColor="@color/color_64" />
+
+                <Button
+                    android:id="@+id/record"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_fff"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_13"
+                    android:onClick="openRecord"
+                    android:padding="10dp"
+                    android:text="服务记录"
+                    android:textColor="@color/color_64" />
+
+                <Button
+                    android:id="@+id/manager"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/color_fff"
+                    android:drawablePadding="5dp"
+                    android:drawableTop="@drawable/icon_6"
+                    android:padding="10dp"
+                    android:text="商家管理"
+                    android:textColor="@color/color_64" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/business"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"
+                android:textColor="@color/color_32"
+                android:textSize="18sp"
+                android:onClick="openYouLeYanPiao"
+                android:drawableRight="@drawable/item_right_arrow_main"
+                android:padding="10dp"
+                android:text="游乐验票" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

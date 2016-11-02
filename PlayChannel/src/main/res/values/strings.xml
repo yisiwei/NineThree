@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">游乐频道</string>
+
+    <!-- 登录注册 -->
+    <string name="username_hint">手机号</string>
+    <string name="password_hint">密码</string>
+    <string name="login">登录</string>
+
+</resources>

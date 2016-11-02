@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_main"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/title_left_btn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@null"
+            android:contentDescription="@null"
+            android:onClick="openSetting"
+            android:src="@drawable/icon_setting" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/app_name"
+            android:textColor="@color/color_fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/title_right_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="余额"
+            android:textColor="@color/color_fff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line2"/>
+
+    <RadioGroup
+        android:background="@color/line"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="首页"
+            android:button="@null"
+            android:gravity="center"
+            android:checked="true"
+            android:textColor="@drawable/selector_text"
+            android:drawableTop="@drawable/icon_setting"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="发现"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/selector_text"
+            android:drawableTop="@drawable/icon_setting"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="我的"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/selector_text"
+            android:drawableTop="@drawable/icon_setting"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动名称" />
+
+                <EditText
+                    android:id="@+id/activity_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/round_border_gray"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动简介" />
+
+                <EditText
+                    android:id="@+id/activity_content"
+                    android:gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/round_border_gray"
+                    android:minLines="3"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:background="@color/color_fff"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动类型" />
+
+                <RadioGroup
+                    android:id="@+id/rg_type"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/rb_card"
+                        android:layout_width="80dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:checked="true"
+                        android:background="@drawable/selector_bg_main"
+                        android:text="面值卡"
+                        android:textColor="@drawable/selector_text_main"
+                        android:padding="10dp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_pdu"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/selector_bg_main"
+                        android:text="产品"
+                        android:textColor="@drawable/selector_text_main"
+                        android:padding="10dp" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line2" />
+
+            <LinearLayout
+                android:id="@+id/ll_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="面值金额" />
+
+                <EditText
+                    android:id="@+id/card_price"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:background="@drawable/round_border_gray"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元（请输入1~99整数）" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_pdu"
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_fff"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="赠品名称" />
+
+                    <TextView
+                        android:id="@+id/pduName"
+                        android:drawableRight="@drawable/item_right_arrow"
+                        android:padding="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line2" />
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_fff"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="赠品图片" />
+
+                    <ImageView
+                        android:id="@+id/pduImg"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/line2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_fff"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="赠品金额" />
+
+                    <TextView
+                        android:id="@+id/pdu_price"
+                        android:padding="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="发行数量" />
+
+                <EditText
+                    android:id="@+id/number"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:background="@drawable/round_border_gray"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动日期" />
+
+                <Button
+                    android:id="@+id/activity_start_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:hint="开始时间"
+                    android:background="@drawable/round_border_gray"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <Button
+                    android:id="@+id/activity_end_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:hint="结束时间"
+                    android:background="@drawable/round_border_gray"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_fff"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/valid_date" />
+
+                <Button
+                    android:id="@+id/valid_start_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:hint="开始时间"
+                    android:background="@drawable/round_border_gray"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <Button
+                    android:id="@+id/valid_end_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:hint="结束时间"
+                    android:background="@drawable/round_border_gray"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line2" />
+
+            <include layout="@layout/merge_share" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

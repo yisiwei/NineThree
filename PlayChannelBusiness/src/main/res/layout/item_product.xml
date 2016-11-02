@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:drawableLeft="@drawable/icon_pdu_item"
+        android:drawablePadding="20dp"
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/color_32"
+        android:padding="10dp"
+        android:text="@string/app_name"
+        android:textSize="20sp" />
+
+</LinearLayout>

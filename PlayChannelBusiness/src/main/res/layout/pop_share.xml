@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fff"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/share_wechat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/share_wechat"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="微信好友" />
+
+    <TextView
+        android:id="@+id/share_wxcircle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/share_wxcircle"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="朋友圈" />
+
+    <TextView
+        android:id="@+id/share_qq"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/share_qq"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="QQ好友" />
+
+    <TextView
+        android:id="@+id/share_qzone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="5dp"
+        android:drawableTop="@drawable/share_qzone"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="QQ空间" />
+
+</LinearLayout>

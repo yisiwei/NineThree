@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/icon_pdu_item"
+        android:drawablePadding="20dp"
+        android:padding="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/color_32"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/is_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="已绑定"
+        android:textColor="@color/color_main"
+        android:textSize="16sp" />
+
+</LinearLayout>

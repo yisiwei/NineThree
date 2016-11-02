@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_fff"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <!-- 商家、设备编码、产品、活动、维护时间、维护者 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/termina_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="设备：Te0012234"
+        android:textColor="@color/color_32"
+        android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已启用"
+            android:gravity="right"
+            android:textColor="@color/color_32"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/orgName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="商家：蜂之谷游乐场"
+        android:textColor="@color/color_32"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/pduName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="产品：过山车"
+        android:textColor="@color/color_32"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="配置者：张三"
+                android:textColor="@color/color_32"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/edit_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="配置时间：2016-08-15 12:12:12"
+                android:textColor="@color/color_32"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/update_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="近期访问时间：2016-08-15 12:12:12"
+                android:textColor="@color/color_32"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <com.ninethree.palychannelbusiness.view.CircleImageView
+            android:id="@+id/headImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/default_head"
+            app:civ_border_color="@color/line"
+            app:civ_border_width="1dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
